@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <header>
+      <h1>Spli<br />tter</h1>
+    </header>
+    <main>
+      <section class="left">
+        <div class="bill-amount">
+          <label for="bill">Bill</label>
+          <div class="bill-input">
+            <img src="images/icon-dollar.svg" alt="Dollar icon" /><input
+              type="number"
+              id="bill"
+              name="bill"
+              placeholder="0"
+            />
+          </div>
+        </div>
+        <div class="tip-selection">
+          <label for="tipSelect">Select Tip %</label>
+          <div class="tip-buttons">
+            <button class="btn tip" value="5">5%</button>
+            <button class="btn tip" value="10">10%</button>
+            <button class="btn tip" value="15">15%</button>
+            <button class="btn tip" value="25">25%</button>
+            <button class="btn tip" value="50">50%</button>
+            <input
+              type="number"
+              name="tipSelect"
+              id="tipSelect"
+              placeholder="Custom"
+            />
+          </div>
+        </div>
+        <div class="num-of-people">
+          <label for="numOfPeople">Number of People</label>
+          <div class="nop-input">
+            <img src="images/icon-person.svg" alt="Person icon" />
+            <input
+              type="number"
+              name="numOfPeople"
+              id="numOfPeople"
+              placeholder="0"
+              value="1"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="right">
+        <div class="total">
+          <div class="tip-amount">
+            <div class="tip-text">
+              <p>Tip Amount</p>
+              <p>/ person</p>
+            </div>
+            <p class="tip-total">$0.00</p>
+          </div>
+          <div class="total-amount">
+            <div class="total-text">
+              <p>Total Amount</p>
+              <p>/ person</p>
+            </div>
+            <p class="total-total">$0.00</p>
+          </div>
+        </div>
+        <button class="btn reset-btn active">Reset</button>
+      </section>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.linkedin.com/in/dragisa-djurasinovic/">Giga</a>.
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

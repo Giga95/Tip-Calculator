@@ -1,0 +1,51 @@
+@media (max-width: 130rem) {
+}
+
+@media (max-width: 120rem) {
+  .tip-buttons {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 86rem) {
+  body {
+    height: 100%;
+  }
+
+  header h1 {
+    padding: 4rem;
+  }
+
+  main {
+    padding: 1.6rem;
+    height: 100%;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .left {
+    padding: 1rem;
+  }
+
+  .right {
+    padding: 2.4rem;
+  }
+
+  .tip-total,
+  .total-total {
+    font-size: 3.2rem;
+  }
+
+  .reset-btn {
+    margin-top: 2.4rem;
+  }
+
+  footer {
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 37.5rem) {
+  main {
+    width: 100%;
+  }
+}

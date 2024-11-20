@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --strong-cyan: #26c0ab;
+  --very-dark-cyan: #00494d;
+  --dak-grayish-cyan: #5e7a7d;
+  --grayish-cyan: #7f9c9f;
+  --light-grayish-cyan: #c5e4e7;
+  --very-light-grayish-cyan: #f4fafa;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Space Mono", sans-serif;
+}
+
+body {
+  background: var(--light-grayish-cyan);
+  font-size: 2.4rem;
+  max-width: 144rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  letter-spacing: 2rem;
+  color: var(--very-dark-cyan);
+}
+
+main {
+  background: var(--white);
+  width: 80%;
+  padding: 3.2rem;
+  border-radius: 2.4rem;
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 3.2rem;
+  height: 50rem;
+}
+
+.left {
+  padding: 3.2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+
+.bill-amount,
+.num-of-people {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--dak-grayish-cyan);
+  padding-bottom: 0.8rem;
+}
+
+input {
+  font-family: "Space Mono", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--very-dark-cyan);
+  border: none;
+  border-radius: 0.6rem;
+  text-align: right;
+  background: var(--very-light-grayish-cyan);
+  padding: 0.6rem 1.6rem;
+  width: 100%;
+  transition: 0.2s;
+}
+
+*:focus-visible {
+  outline: 0.3rem solid var(--strong-cyan);
+}
+
+.bill-input {
+  position: relative;
+}
+
+.bill-amount img {
+  position: absolute;
+  color: var(--grayish-cyan);
+  top: 1.6rem;
+  left: 1.6rem;
+}
+
+.tip-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.6rem;
+}
+
+.btn {
+  font-family: "Space Mono", sans-serif;
+  background: var(--very-dark-cyan);
+  color: var(--white);
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding: 0.6rem 1.6rem;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: var(--dak-grayish-cyan);
+}
+
+.tip-selection {
+  display: flex;
+  flex-direction: column;
+}
+
+.tip-buttons input {
+  text-align: center;
+}
+
+.nop-input {
+  position: relative;
+}
+
+.nop-input img {
+  position: absolute;
+  top: 1.6rem;
+  left: 1.6rem;
+}
+
+.right {
+  width: 100%;
+  background: var(--very-dark-cyan);
+  border-radius: 1.6rem;
+  padding: 4rem;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.tip-amount,
+.total-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tip-text,
+.total-text {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.tip-text p:nth-child(2),
+.total-text p:nth-child(2) {
+  color: var(--grayish-cyan);
+}
+
+.tip-total,
+.total-total {
+  font-size: 4.8rem;
+  color: var(--strong-cyan);
+  font-weight: 700;
+}
+
+.reset-btn {
+  text-transform: uppercase;
+  background: var(--dak-grayish-cyan);
+  color: var(--very-dark-cyan);
+  padding: 1rem 0;
+}
+
+.attribution {
+  padding-top: 3.2rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.active {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
