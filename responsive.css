@@ -1,7 +1,4 @@
-@media (max-width: 130rem) {
-}
-
-@media (max-width: 120rem) {
+@media (max-width: 115rem) {
   .tip-buttons {
     grid-template-columns: 1fr 1fr;
   }
